@@ -26,7 +26,7 @@ export default function About() {
             <img
               src="/asset/strat.jpg"
               className="w-full h-[260px] object-cover"
-              alt="Corporate support illustration"
+              alt="About Corporate Brandup"
             />
           </div>
         </section>

@@ -4,7 +4,7 @@ function Hero() {
   return (
     <article
       id="home"
-      className="min-h-screen relative bg-[url('/asset/hero-img.jpg')] bg-cover bg-center p-4 pt-25 flex justify-center text-white"
+      className="min-h-screen w-full relative bg-[url('/asset/hero-img.jpg')] bg-cover bg-center p-4 pt-25 flex justify-center text-white"
     >
       <div
         className="absolute inset-0 bg-linear-to-b 

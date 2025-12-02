@@ -1,15 +1,26 @@
-import React from "react";
-import { Facebook, Instagram, X, Linkedin } from "lucide-react";
+import { FaWhatsapp, FaInstagram } from "react-icons/fa";
+import { BiLogoTiktok } from "react-icons/bi";
+import { MdOutlineEmail } from "react-icons/md";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#203959] text-[#ABB7B3] pt-16 pb-10">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+    <footer
+      id="contact"
+      className="scroll-mt-12 bg-[#203959] pt-16 pb-10 text-[#ABB7B3]"
+    >
+      <div className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-8 px-6 md:grid-cols-4">
         {/* Brand */}
         <div>
-          <h2 className="text-2xl font-semibold text-white">
-            Corporate Brand<span className="text-[#96ADA5]">Up</span>
-          </h2>
+          <div className="flex items-center gap-2 text-2xl font-semibold text-white">
+            <img
+              src="/asset/logo.jpg"
+              alt="BrandUp Logo"
+              className="size-10 rounded-full"
+            />
+            <h2>
+              Corporate Brand<span className="text-[#96ADA5]">Up</span>
+            </h2>
+          </div>
           <p className="mt-4 text-sm leading-relaxed text-[#96ADA5]">
             End-to-end corporate support covering company formation, compliance,
             administrative services, brand identity development, and business
@@ -17,52 +28,66 @@ export default function Footer() {
           </p>
 
           {/* Socials */}
-          <div className="flex items-center gap-4 mt-6">
-            <a href="#" className="hover:text-white transition-colors">
-              <Linkedin size={20} />
+          <div className="mt-6 flex items-center gap-4">
+            <a
+              href="https://wa.me/message/4F2ZBE3VOLNEC1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-white"
+            >
+              <FaWhatsapp size={25} />
             </a>
-            <a href="#" className="hover:text-white transition-colors">
-              <Instagram size={20} />
+            <a
+              href="https://www.tiktok.com/@thecorporatebrandup?_r=1&_t=ZM-91tdnXKKzvs"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-white"
+            >
+              <BiLogoTiktok size={25} />
             </a>
-            <a href="#" className="hover:text-white transition-colors">
-              <Facebook size={20} />
+            <a
+              href="#"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-white"
+            >
+              <FaInstagram size={25} />
             </a>
-            <a href="#" className="hover:text-white transition-colors">
-              <X size={20} />
+            <a
+              href="mailto:thecorporatebrandup@gmail.com?subject=Business Inquiry"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-white"
+            >
+              <MdOutlineEmail size={29} />
             </a>
           </div>
         </div>
 
         {/* Company Links */}
         <div>
-          <h3 className="text-lg font-semibold text-white mb-4">Company</h3>
+          <h3 className="mb-4 text-lg font-semibold text-white">Company</h3>
           <ul className="space-y-3">
             <li>
-              <a href="#home" className="hover:text-white transition-colors">
+              <a href="#home" className="transition-colors hover:text-white">
                 Home
               </a>
             </li>
             <li>
-              <a href="#about" className="hover:text-white transition-colors">
+              <a href="#about" className="transition-colors hover:text-white">
                 About
               </a>
             </li>
             <li>
               <a
                 href="#testimonials"
-                className="hover:text-white transition-colors"
+                className="transition-colors hover:text-white"
               >
                 Testimonials
               </a>
             </li>
             <li>
-              <a href="#faqs" className="hover:text-white transition-colors">
+              <a href="#faqs" className="transition-colors hover:text-white">
                 FAQs
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="hover:text-white transition-colors">
-                Contact
               </a>
             </li>
           </ul>
@@ -70,28 +95,28 @@ export default function Footer() {
 
         {/* Services */}
         <div>
-          <h3 className="text-lg font-semibold text-white mb-4">Services</h3>
+          <h3 className="mb-4 text-lg font-semibold text-white">Services</h3>
           <ul className="space-y-3">
             <li>
               <a
                 href="#formation"
-                className="hover:text-white transition-colors"
+                className="transition-colors hover:text-white"
               >
-                Company Formation
+                Business Formation
               </a>
             </li>
             <li>
               <a
-                href="#compliance"
-                className="hover:text-white transition-colors"
+                href="#registration"
+                className="transition-colors hover:text-white"
               >
-                Compliance & Administrative Support
+                Business Registration
               </a>
             </li>
             <li>
               <a
                 href="#branding"
-                className="hover:text-white transition-colors"
+                className="transition-colors hover:text-white"
               >
                 Brand Identity Development
               </a>
@@ -99,9 +124,14 @@ export default function Footer() {
             <li>
               <a
                 href="#coaching"
-                className="hover:text-white transition-colors"
+                className="transition-colors hover:text-white"
               >
                 Business Coaching
+              </a>
+            </li>
+            <li>
+              <a href="#support" className="transition-colors hover:text-white">
+                Administrative Support
               </a>
             </li>
           </ul>
@@ -109,31 +139,35 @@ export default function Footer() {
 
         {/* Contact Section */}
         <div>
-          <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
+          <h3 className="mb-4 text-lg font-semibold text-white">Contact</h3>
           <ul className="space-y-3 text-sm">
             <li>
               Email:{" "}
               <a
-                className="text-white"
+                className="transition-colors duration-200 ease-in-out hover:text-white"
                 href="mailto:thecorporatebrandup@gmail.com"
                 target="_blank"
               >
-                thecorporatebrandup@gmail.com
+                thecorporatebrandup<span className="md:hidden">@gmail.com</span>
               </a>
             </li>
             <li>
-              Phone: <span className="text-white">+234 906 420 7254</span>
+              Phone:{" "}
+              <a
+                href="tel:+234 906 420 7254"
+                target="_blank"
+                className="hover:text-white"
+              >
+                +234 906 420 7254
+              </a>
             </li>
             <li>
-              <span className="text-[#96ADA5] font-semibold">
+              <span className="font-semibold text-[#96ADA5]">
                 Business Hours
               </span>
               <br />
-              <span className="text-white">
-                Mon &ndash; Fri: 9AM &ndash; 6PM
-              </span>{" "}
-              <br />
-              <span className="text-white">Sat: 9AM &ndash; 12PM</span>
+              <span>Mon &ndash; Fri: 9AM &ndash; 6PM</span> <br />
+              <span>Sat: 9AM &ndash; 12PM</span>
             </li>
             <li>Location: Delta, Nigeria</li>
           </ul>
@@ -141,8 +175,8 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-[#416772] mt-12 pt-6 text-center text-sm">
-        <p>&copy; 2025 Corporate BrandUp. All rights reserved.</p>
+      <div className="mt-12 border-t border-[#416772] pt-6 text-center text-sm">
+        <p>&copy; 2025 The Corporate BrandUp LTD. All rights reserved.</p>
       </div>
     </footer>
   );

@@ -53,15 +53,15 @@ export default function Navbar() {
     {
       label: "Services",
       children: [
-        { label: "Company Formation", href: "#formation" },
-        { label: "Compliance & Admin", href: "#compliance" },
-        { label: "Brand Identity", href: "#branding" },
-        { label: "Business Coaching", href: "#coaching" },
+        { label: "Business Formation & Development", href: "#formation" },
+        { label: "Business Registration Services", href: "#registration" },
+        { label: "Business Branding", href: "#branding" },
+        { label: "Business Coaching & Advisory", href: "#coaching" },
+        { label: "Corporate and Administrative Support", href: "#support" },
       ],
     },
     { label: "Testimonials", href: "#testimonials" },
     { label: "FAQs", href: "#faqs" },
-    { label: "Contact", href: "#contact" },
   ];
 
   return (
@@ -186,7 +186,8 @@ export default function Navbar() {
 
             {/* Mobile CTA */}
             <a
-              href="#consultation"
+              onClick={() => setOpen(!open)}
+              href="#contact"
               className="mt-2 px-5 py-2 rounded-xl bg-[#96ADA5] text-[#203959] font-semibold hover:bg-[#416772] hover:text-[#ABB7B3] transition-colors text-center"
             >
               Contact Us

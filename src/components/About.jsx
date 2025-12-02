@@ -4,7 +4,7 @@ export default function About() {
       id="about"
       className="w-full bg-[#F5F7F8] py-20 px-6 md:scroll-mt-6 min-h-screen flex justify-center items-center"
     >
-      <div className="max-w-6xl mx-auto space-y-15">
+      <div className="max-w-6xl mx-auto space-y-8">
         {/* --- About Us Intro --- */}
         <section className="flex flex-col-reverse md:flex-row gap-10 items-center">
           <div className="flex-1 space-y-4">
@@ -31,7 +31,7 @@ export default function About() {
           </div>
         </section>
 
-        <div className="flex flex-col md:flex-row md:justify-between gap-[60px]">
+        <div className="flex flex-col md:flex-row md:justify-between gap-8">
           {/* --- What We Do --- */}
           <section className="bg-[#203959] text-white rounded-2xl p-10 shadow-lg">
             <h3 className="text-2xl font-semibold mb-4">What We Do</h3>

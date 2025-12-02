@@ -65,7 +65,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-[#203959] text-white shadow-sm">
+    <header className="fixed top-0 left-0 w-full z-50 bg-[#203959] text-white bg-linear-to-r/srgb from-[#334963] via-[#141E30] to-[#334963] shadow-md shadow-white/20">
       <nav className="max-w-7xl mx-auto flex items-center justify-between p-4">
         {/* Logo */}
         <h1 className="text-xl font-semibold tracking-wide">
@@ -155,6 +155,7 @@ export default function Navbar() {
               <li key={item.label}>
                 {!item.children ? (
                   <a
+                    onClick={() => setOpen(!open)}
                     href={item.href}
                     className="block py-2 hover:text-[#96ADA5] select-none"
                   >
@@ -169,6 +170,7 @@ export default function Navbar() {
                       {item.children.map((child) => (
                         <li key={child.label}>
                           <a
+                            onClick={() => setOpen(!open)}
                             href={child.href}
                             className="block py-1 text-sm hover:text-[#96ADA5]"
                           >

@@ -23,7 +23,7 @@ function Founder() {
       </div>
 
       <div className="max-w-5/6 md:max-w-4xl">
-        <h2 className="font-hero mb-12 pt-10 text-center text-3xl font-bold text-[#203959] md:text-4xl">
+        <h2 className="font-hero mb-12 text-center text-3xl font-bold text-[#203959] md:text-4xl">
           Meet The Founder
         </h2>
 

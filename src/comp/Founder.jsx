@@ -1,11 +1,27 @@
 import React from "react";
+import LightRays from "@/component/LightRays";
 
 function Founder() {
   return (
     <article
       id="founder"
-      className="flex min-h-[calc(100vh-56px)] w-full scroll-mt-15 items-center justify-center bg-[url('/asset/founder-bg.jpg')] bg-cover bg-center bg-no-repeat p-4 text-white md:scroll-mt-14"
+      className="relative flex min-h-[calc(100vh-56px)] w-full scroll-mt-15 items-center justify-center p-4 md:scroll-mt-14"
     >
+      <div className="absolute inset-0 top-0 z-[-1] min-h-screen">
+        <LightRays
+          raysOrigin="top-center-offset"
+          raysColor="#5dfeca"
+          raysSpeed={0.5}
+          lightSpread={1.0}
+          rayLength={2.8}
+          followMouse={true}
+          mouseInfluence={0.03}
+          noiseAmount={0.0}
+          distortion={0.03}
+          className="custom-rays"
+        />
+      </div>
+
       <div className="max-w-5/6 md:max-w-4xl">
         <h2 className="font-hero mb-12 pt-10 text-center text-3xl font-bold text-[#203959] md:text-4xl">
           Meet The Founder
@@ -42,7 +58,7 @@ function Founder() {
             <img
               src="/asset/profile-pic.png"
               alt="Founder's Profile Picture"
-              className="h-auto w-full max-w-[200px] -skew-1 rounded-4xl sm:max-w-[250px] md:max-w-[300px]"
+              className="h-auto w-full max-w-[200px] rounded-4xl sm:max-w-[250px] md:max-w-[300px]"
             />
             <figcaption className="text-center">
               <h3 className="font-bold text-[#008576]">Efe Wilson Aghwata</h3>

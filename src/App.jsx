@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import ServicesSection from "./components/ServiceSection";
-import Founder from "./components/Founder";
-import Footer from "./components/Footer";
+import Navbar from "./comp/Navbar";
+import Hero from "./comp/Hero";
+import About from "./comp/About";
+import ServicesSection from "./comp/ServiceSection";
+import Founder from "./comp/Founder";
+import Footer from "./comp/Footer";
 
 function App() {
   return (

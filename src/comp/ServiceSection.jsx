@@ -11,7 +11,7 @@ export default function ServicesSection() {
   return (
     <section
       id="services"
-      className="flex min-h-screen w-full items-center justify-center bg-[#F5F7FA] px-4 py-20"
+      className="flex min-h-screen w-full scroll-mt-14 items-center justify-center bg-[#F5F7FA] px-4 py-20"
     >
       <div className="mx-auto w-full max-w-6xl px-4">
         <h2 className="font-hero mb-12 text-center text-3xl font-bold text-[#203959] md:text-4xl">

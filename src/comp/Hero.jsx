@@ -9,11 +9,11 @@ function Hero() {
     >
       <div className="absolute inset-0 top-0 z-[-1] min-h-screen">
         <Beams
-          beamWidth={2}
+          beamWidth={7}
           beamHeight={15}
           beamNumber={12}
           lightColor="#ffffff"
-          speed={2}
+          speed={1}
           noiseIntensity={1.75}
           scale={0.2}
           rotation={0}

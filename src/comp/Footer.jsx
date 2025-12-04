@@ -22,9 +22,9 @@ export default function Footer() {
             </h2>
           </div>
           <p className="mt-4 text-sm leading-relaxed text-[#96ADA5]">
-            End-to-end corporate support covering company formation, compliance,
-            administrative services, brand identity development, and business
-            coaching delivered with clarity and integrity.
+            End-to-end corporate support covering business formation,
+            compliance, administrative services, brand identity development, and
+            business coaching delivered with clarity and integrity.
           </p>
 
           {/* Socials */}
@@ -177,6 +177,28 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="mt-12 border-t border-[#416772] pt-6 text-center text-sm">
         <p>&copy; 2025 The Corporate BrandUp LTD. All rights reserved.</p>
+        <p className="flex justify-center">
+          <a
+            className="mt-4 flex w-fit items-center justify-center gap-2 rounded-2xl border border-black p-2 hover:opacity-85"
+            href="#home"
+          >
+            Back To Top
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="size-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5m-13.5-9L12 3m0 0 4.5 4.5M12 3v13.5"
+              />
+            </svg>
+          </a>
+        </p>
       </div>
     </footer>
   );

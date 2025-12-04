@@ -4,6 +4,7 @@ import Hero from "./comp/Hero";
 import About from "./comp/About";
 import ServicesSection from "./comp/ServiceSection";
 import Founder from "./comp/Founder";
+import Faq from "./comp/Faq";
 import Footer from "./comp/Footer";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <About />
         <ServicesSection />
         <Founder />
+        <Faq />
       </main>
       <Footer />
     </div>

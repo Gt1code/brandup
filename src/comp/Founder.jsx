@@ -5,7 +5,7 @@ function Founder() {
   return (
     <article
       id="founder"
-      className="relative flex min-h-[calc(100vh-56px)] w-full scroll-mt-15 items-center justify-center p-4 md:scroll-mt-14"
+      className="relative flex min-h-[calc(100vh-56px)] w-full scroll-mt-15 items-center justify-center px-4 py-8 md:scroll-mt-14"
     >
       <div className="absolute inset-0 top-0 z-[-1] min-h-screen">
         <LightRays
@@ -23,7 +23,7 @@ function Founder() {
       </div>
 
       <div className="max-w-5/6 md:max-w-4xl">
-        <h2 className="font-hero mb-12 text-center text-3xl font-bold text-[#203959] md:text-4xl">
+        <h2 className="font-hero mb-12 grid place-items-center text-3xl font-bold text-[#203959] md:text-4xl">
           Meet The Founder
         </h2>
 

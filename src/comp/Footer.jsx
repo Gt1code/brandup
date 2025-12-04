@@ -18,7 +18,7 @@ export default function Footer() {
               className="size-10 rounded-full"
             />
             <h2>
-              Corporate Brand<span className="text-[#96ADA5]">Up</span>
+              The Corporate Brand<span className="text-[#96ADA5]">Up</span> Ltd
             </h2>
           </div>
           <p className="mt-4 text-sm leading-relaxed text-[#96ADA5]">

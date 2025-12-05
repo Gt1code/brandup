@@ -4,7 +4,6 @@ import Hero from "./comp/Hero";
 import About from "./comp/About";
 import ServicesSection from "./comp/ServiceSection";
 import Founder from "./comp/Founder";
-import Scroll from "./comp/Scroll";
 import Testimonials from "./comp/Testimonials";
 import Faq from "./comp/Faq";
 import Footer from "./comp/Footer";
@@ -18,7 +17,6 @@ function App() {
         <About />
         <ServicesSection />
         <Founder />
-        <Scroll />
         <Testimonials />
         <Faq />
       </main>

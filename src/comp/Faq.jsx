@@ -10,7 +10,7 @@ function Faq() {
   return (
     <article
       id="faqs"
-      className="min-h-[calc('100vh - 56px')] mt-0 flex w-full items-center justify-center bg-[url('/asset/faq-min.jpg')] bg-cover bg-center bg-no-repeat px-6 py-20 md:scroll-mt-6 md:bg-auto md:bg-position-[initial]"
+      className="min-h-[calc('100vh - 56px')] mt-0 flex w-full items-center justify-center bg-[url('/asset/faq-min.jpg')] bg-cover bg-center px-6 py-20 md:scroll-mt-6 md:bg-auto md:bg-position-[initial]"
     >
       <section className="flex w-9/10 flex-col gap-6 md:w-4xl md:flex-row md:justify-between">
         <div className="flex-[0.8] p-4">

@@ -9,6 +9,8 @@ import {
 import "@szhsin/react-menu/dist/index.css";
 import "@szhsin/react-menu/dist/transitions/zoom.css";
 
+import { navItems } from "@/utils/MapElements";
+
 // Reusable hover dropdown component
 function HoverMenu({ label, children, href }) {
   const ref = useRef(null);
@@ -62,29 +64,6 @@ export default function Navbar() {
   }, []);
   const [open, setOpen] = useState(false);
 
-  const navItems = [
-    { label: "Home", href: "#home" },
-    {
-      label: "About",
-      children: [
-        { label: "Our Company", href: "#about" },
-        { label: "Meet the Founder", href: "#founder" },
-      ],
-    },
-    {
-      label: "Services",
-      children: [
-        { label: "Business Formation & Development", href: "#formation" },
-        { label: "Business Registration Services", href: "#registration" },
-        { label: "Business Branding", href: "#branding" },
-        { label: "Business Coaching & Advisory", href: "#coaching" },
-        { label: "Corporate and Administrative Support", href: "#support" },
-      ],
-    },
-    { label: "Testimonials", href: "#testimonials" },
-    { label: "FAQs", href: "#faqs" },
-  ];
-
   return (
     <header
       className={`fixed top-0 left-0 z-50 w-full text-white backdrop-blur-[6.4px] transition-colors duration-300 ${
@@ -95,9 +74,17 @@ export default function Navbar() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-4">
         {/* Logo */}
-        <h1 className="text-xl font-semibold tracking-wide select-none">
-          CORPORATE BRAND<span className="text-red-600">UP</span>
-        </h1>
+        <a href="#" className="flex items-center gap-2">
+          <img
+            src="/asset/logo.jpg"
+            alt="brandup logo"
+            className="size-8 rounded-full md:hidden"
+          />
+
+          <h1 className="text-xl font-semibold tracking-wide select-none">
+            CORPORATE BRAND<span className="text-red-600">UP</span>
+          </h1>
+        </a>
 
         {/* Mobile Toggle */}
         <button className="md:hidden" onClick={() => setOpen(!open)}>
@@ -109,10 +96,10 @@ export default function Navbar() {
         </button>
 
         {/* Desktop Menu */}
-        <ul className="hidden items-center gap-4 md:flex lg:gap-9">
+        <ul className="hidden items-center gap-3.5 md:flex lg:gap-9">
           <li key="home" className="group relative">
             <a
-              href="#home"
+              href="#"
               className="cursor-pointer transition-colors hover:text-[#ABB7B3]"
             >
               Home
@@ -168,7 +155,7 @@ export default function Navbar() {
         {/* CTA Button */}
         <a
           href="#contact"
-          className="ml-4 hidden rounded-xl bg-[#96ADA5] px-5 py-2 text-center font-semibold text-[#203959] transition-colors hover:bg-[#416772] hover:text-[#ABB7B3] md:block"
+          className="ml-4 hidden rounded-xl bg-[#96ADA5] py-2 text-center font-semibold text-[#203959] transition-colors hover:bg-[#416772] hover:text-[#ABB7B3] md:block md:px-4 lg:px-5"
         >
           Contact Us
         </a>
@@ -176,7 +163,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`absolute right-0 z-50 flex h-[calc(100vh-56px)] w-full max-w-[440px] transform flex-col border-t border-[#416772] bg-[#203959] transition-transform duration-400 ease-out md:hidden ${open ? "translate-x-0" : "translate-x-full"} `}
+        className={`absolute right-0 z-50 flex h-[calc(100vh-56px)] w-full max-w-[440px] transform flex-col border-t border-[#416772] bg-[#203959] shadow-md shadow-black transition-transform duration-400 ease-out md:hidden ${open ? "translate-x-0" : "translate-x-full"} `}
       >
         {/* Scrollable Nav Items */}
         <ul className="flex flex-col gap-4 overflow-y-auto p-4">

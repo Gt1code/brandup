@@ -25,7 +25,7 @@ export default function About() {
 
           <div className="flex-1 overflow-hidden rounded-2xl shadow-xl">
             <img
-              src="/asset/strat.jpg"
+              src="/asset/about-img.jpg"
               className="h-[260px] w-full object-cover"
               alt="About Corporate Brandup"
             />

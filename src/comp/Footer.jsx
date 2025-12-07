@@ -1,6 +1,8 @@
-import { FaWhatsapp, FaInstagram } from "react-icons/fa";
-import { BiLogoTiktok } from "react-icons/bi";
-import { MdOutlineEmail } from "react-icons/md";
+import {
+  footerCompany,
+  footerServices,
+  socialIconsContainer,
+} from "@/utils/MapElements";
 
 export default function Footer() {
   return (
@@ -8,14 +10,14 @@ export default function Footer() {
       id="contact"
       className="scroll-mt-12 bg-[#203959] pt-16 pb-10 text-[#ABB7B3]"
     >
-      <div className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-8 px-6 md:grid-cols-4">
+      <article className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-8 px-6 md:grid-cols-4">
         {/* Brand */}
-        <div>
+        <section>
           <div className="flex items-center gap-2 text-2xl font-semibold text-white">
             <img
               src="/asset/logo.jpg"
               alt="BrandUp Logo"
-              className="size-10 rounded-full"
+              className="size-8 rounded-full"
             />
             <h2>
               The Corporate Brand<span className="text-[#96ADA5]">Up</span> Ltd
@@ -28,117 +30,57 @@ export default function Footer() {
           </p>
 
           {/* Socials */}
-          <div className="mt-6 flex items-center gap-4">
-            <a
-              href="https://wa.me/message/4F2ZBE3VOLNEC1"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-colors hover:text-white"
-            >
-              <FaWhatsapp size={25} />
-            </a>
-            <a
-              href="https://www.tiktok.com/@thecorporatebrandup?_r=1&_t=ZM-91tdnXKKzvs"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-colors hover:text-white"
-            >
-              <BiLogoTiktok size={25} />
-            </a>
-            <a
-              href="#"
-              rel="noopener noreferrer"
-              className="transition-colors hover:text-white"
-            >
-              <FaInstagram size={25} />
-            </a>
-            <a
-              href="mailto:thecorporatebrandup@gmail.com?subject=Business Inquiry"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-colors hover:text-white"
-            >
-              <MdOutlineEmail size={29} />
-            </a>
-          </div>
-        </div>
+          <section className="mt-6 flex items-center gap-4">
+            {socialIconsContainer.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors hover:text-white"
+              >
+                {item.socialIcon}
+              </a>
+            ))}
+          </section>
+        </section>
 
         {/* Company Links */}
-        <div>
+        <section>
           <h3 className="mb-4 text-lg font-semibold text-white">Company</h3>
           <ul className="space-y-3">
-            <li>
-              <a href="#home" className="transition-colors hover:text-white">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#about" className="transition-colors hover:text-white">
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href="#testimonials"
-                className="transition-colors hover:text-white"
-              >
-                Testimonials
-              </a>
-            </li>
-            <li>
-              <a href="#faqs" className="transition-colors hover:text-white">
-                FAQs
-              </a>
-            </li>
+            {footerCompany.map((company) => (
+              <li key={company.href}>
+                <a
+                  href={company.href}
+                  className="transition-colors hover:text-white"
+                >
+                  {company.text}
+                </a>
+              </li>
+            ))}
           </ul>
-        </div>
+        </section>
 
         {/* Services */}
-        <div>
+        <section>
           <h3 className="mb-4 text-lg font-semibold text-white">Services</h3>
           <ul className="space-y-3">
-            <li>
-              <a
-                href="#formation"
-                className="transition-colors hover:text-white"
-              >
-                Business Formation
-              </a>
-            </li>
-            <li>
-              <a
-                href="#registration"
-                className="transition-colors hover:text-white"
-              >
-                Business Registration
-              </a>
-            </li>
-            <li>
-              <a
-                href="#branding"
-                className="transition-colors hover:text-white"
-              >
-                Brand Identity Development
-              </a>
-            </li>
-            <li>
-              <a
-                href="#coaching"
-                className="transition-colors hover:text-white"
-              >
-                Business Coaching
-              </a>
-            </li>
-            <li>
-              <a href="#support" className="transition-colors hover:text-white">
-                Administrative Support
-              </a>
-            </li>
+            {footerServices.map((service) => (
+              <li key={service.href}>
+                <a
+                  href={service.href}
+                  className="transition-colors hover:text-white"
+                >
+                  {service.text}
+                </a>
+              </li>
+            ))}
           </ul>
-        </div>
+        </section>
 
         {/* Contact Section */}
-        <div>
+        <section>
           <h3 className="mb-4 text-lg font-semibold text-white">Contact</h3>
           <ul className="space-y-3 text-sm">
             <li>
@@ -163,19 +105,19 @@ export default function Footer() {
             </li>
             <li>
               <span className="font-semibold text-[#96ADA5]">
-                Business Hours
+                Business Hours:
               </span>
               <br />
-              <span>Mon &ndash; Fri: 9AM &ndash; 6PM</span> <br />
-              <span>Sat: 9AM &ndash; 12PM</span>
+              <span>Mon &ndash; Fri: 9am &ndash; 6pm</span> <br />
+              <span>Sat: 9am &ndash; 12pm</span>
             </li>
             <li>Location: Delta, Nigeria</li>
           </ul>
-        </div>
-      </div>
+        </section>
+      </article>
 
       {/* Bottom Bar */}
-      <div className="mt-12 border-t border-[#416772] pt-6 text-center text-sm">
+      <section className="mt-12 border-t border-[#416772] pt-6 text-center text-sm">
         <p>&copy; 2025 The Corporate BrandUp LTD. All rights reserved.</p>
         <p className="flex justify-center">
           <a
@@ -199,7 +141,7 @@ export default function Footer() {
             </svg>
           </a>
         </p>
-      </div>
+      </section>
     </footer>
   );
 }

@@ -113,6 +113,19 @@ export const navItems = [
   { label: "FAQs", href: "#faqs" },
 ];
 
+export const aboutMenuItem = [
+  { href: "#about", text: "Our Company" },
+  { href: "#founder", text: "Meet The Founder" },
+];
+
+export const serviceMenuItem = [
+  { href: "#formation", text: "Business Formation & Development" },
+  { href: "#registration", text: "Business Registration Services" },
+  { href: "#branding", text: "Business Branding" },
+  { href: "#coaching", text: "Business Coaching & Advisory" },
+  { href: "#support", text: "Corporate & Administrative Support" },
+];
+
 // Footer section
 
 export const socialIconsContainer = [

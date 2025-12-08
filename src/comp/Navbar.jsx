@@ -1,45 +1,11 @@
-import { useState, useRef, useEffect } from "react";
-import { Menu, X, ChevronDown } from "lucide-react";
-import {
-  ControlledMenu,
-  MenuItem,
-  useHover,
-  useMenuState,
-} from "@szhsin/react-menu";
+import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
+import { MenuItem } from "@szhsin/react-menu";
 import "@szhsin/react-menu/dist/index.css";
 import "@szhsin/react-menu/dist/transitions/zoom.css";
 
-import { navItems } from "@/utils/MapElements";
-
-// Reusable hover dropdown component
-function HoverMenu({ label, children, href }) {
-  const ref = useRef(null);
-  const [menuState, toggle] = useMenuState({ transition: true });
-  const { anchorProps, hoverProps } = useHover(menuState.state, toggle);
-
-  return (
-    <li className="relative">
-      <a
-        href={href}
-        ref={ref}
-        {...anchorProps}
-        className="relative cursor-pointer pr-4 transition-colors hover:text-[#ABB7B3]"
-      >
-        {label}
-        <ChevronDown className="absolute right-0 bottom-0.5 size-[0.9rem]" />
-      </a>
-
-      <ControlledMenu
-        {...hoverProps}
-        {...menuState}
-        anchorRef={ref}
-        onClose={() => toggle(false)}
-      >
-        {children}
-      </ControlledMenu>
-    </li>
-  );
-}
+import { navItems, aboutMenuItem, serviceMenuItem } from "@/utils/MapElements";
+import HoverMenu from "./HoverMenu";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -76,13 +42,13 @@ export default function Navbar() {
         {/* Logo */}
         <a href="#" className="flex items-center gap-2">
           <img
-            src="/asset/logo.jpg"
+            src="/asset/nlogo.jpg"
             alt="brandup logo"
             className="size-8 rounded-full md:hidden"
           />
 
-          <h1 className="text-xl font-semibold tracking-wide select-none">
-            CORPORATE BRAND<span className="text-red-600">UP</span>
+          <h1 className="text-xl font-semibold tracking-wide select-none md:text-[17px] lg:text-xl">
+            THE CORPORATE BRAND<span className="text-red-600">UP</span>
           </h1>
         </a>
 
@@ -107,30 +73,19 @@ export default function Navbar() {
           </li>
 
           <HoverMenu href="#about" label="About">
-            <MenuItem>
-              <a href="#about">Our Company</a>
-            </MenuItem>
-            <MenuItem>
-              <a href="#founder">Meet The Founder</a>
-            </MenuItem>
+            {aboutMenuItem.map((about) => (
+              <MenuItem key={about.href}>
+                <a href={about.href}>{about.text}</a>
+              </MenuItem>
+            ))}
           </HoverMenu>
 
           <HoverMenu href="#services" label="Services">
-            <MenuItem>
-              <a href="#formation">Business Formation & Development</a>
-            </MenuItem>
-            <MenuItem>
-              <a href="#registration">Business Registration Services</a>
-            </MenuItem>
-            <MenuItem>
-              <a href="#branding">Business Branding</a>
-            </MenuItem>
-            <MenuItem>
-              <a href="#coaching">Business Coaching & Advisory</a>
-            </MenuItem>
-            <MenuItem>
-              <a href="#support">Corporate & Administrative Support</a>
-            </MenuItem>
+            {serviceMenuItem.map((service) => (
+              <MenuItem key={service.href}>
+                <a href={service.href}>{service.text}</a>
+              </MenuItem>
+            ))}
           </HoverMenu>
 
           <li key="testimonials" className="group relative">

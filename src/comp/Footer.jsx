@@ -15,7 +15,7 @@ export default function Footer() {
         <section>
           <div className="flex items-center gap-2 text-2xl font-semibold text-white">
             <img
-              src="/asset/logo.jpg"
+              src="/asset/nlogo.jpg"
               alt="BrandUp Logo"
               className="size-8 rounded-full"
             />

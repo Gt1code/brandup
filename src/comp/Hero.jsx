@@ -10,7 +10,7 @@ function Hero() {
         <section className="font-hero flex flex-col items-center justify-center text-center">
           <div className="flex flex-col items-center md:flex-row md:items-center md:justify-center md:gap-4">
             <img
-              src="android-chrome-512x512.png"
+              src="/asset/android-chrome-512x512.png"
               alt="logo"
               width={150}
               height={150}

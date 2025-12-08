@@ -56,7 +56,7 @@ function Founder() {
 
           <figure className="flex flex-col items-center md:flex-1">
             <img
-              src="/asset/profile-pic-min.jpg"
+              src="/asset/founder-img.jpeg"
               alt="Founder's Profile Picture"
               className="h-auto w-full max-w-[200px] rounded-4xl sm:max-w-[250px] md:max-w-[300px]"
             />

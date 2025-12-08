@@ -47,7 +47,7 @@ export default function Navbar() {
             className="size-8 rounded-full md:hidden"
           />
 
-          <h1 className="text-xl font-semibold tracking-wide select-none md:text-[17px] lg:text-xl">
+          <h1 className="font-semibold tracking-wide select-none lg:text-xl">
             THE CORPORATE BRAND<span className="text-red-600">UP</span>
           </h1>
         </a>

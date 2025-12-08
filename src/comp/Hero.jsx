@@ -4,16 +4,25 @@ function Hero() {
   return (
     <article
       id="home"
-      className="relative flex min-h-screen w-full justify-center bg-white bg-[url('/asset/hero-bg.png')] bg-cover bg-top bg-no-repeat p-4 pt-25 text-white bg-blend-multiply"
+      className="relative flex min-h-screen w-full justify-center bg-black/40 bg-[url('/asset/hero.jpeg')] bg-cover bg-center bg-no-repeat p-4 pt-25 text-white bg-blend-soft-light"
     >
       <div className="relative flex w-[95%] flex-col justify-around md:max-w-5xl">
-        <section className="font-hero text-center">
-          <h2 className="text-4xl text-white md:text-5xl">
-            THE <br /> CORPORATE <br /> BRAND
-            <span className="text-red-600">UP</span> LTD
-          </h2>
+        <section className="font-hero flex flex-col items-center justify-center text-center">
+          <div className="flex flex-col items-center md:flex-row md:items-center md:justify-center md:gap-4">
+            <img
+              src="android-chrome-512x512.png"
+              alt="logo"
+              width={150}
+              height={150}
+              className="hidden md:block"
+            />
+            <h2 className="mt-4 text-4xl text-white md:text-left md:text-5xl">
+              THE <br /> CORPORATE <br /> BRAND
+              <span className="text-red-600">UP</span> LTD
+            </h2>
+          </div>
 
-          <p className="mt-4 md:text-xl">
+          <p className="bg-[rgba(218, 237, 232, 0.13)] mt-6 w-fit rounded-2xl p-2 shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur-[6.4px] md:mt-4 md:text-xl">
             Start, Structure & Grow Your Business with Confidence.
           </p>
         </section>

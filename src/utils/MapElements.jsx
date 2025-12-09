@@ -132,14 +132,17 @@ export const socialIconsContainer = [
   {
     href: "https://wa.me/message/4F2ZBE3VOLNEC1",
     socialIcon: <FaWhatsapp size={25} />,
+    arialLabel: "Chat with us on whatsapp",
   },
   {
     href: "https://www.tiktok.com/@thecorporatebrandup?_r=1&_t=ZM-91tdnXKKzvs",
     socialIcon: <BiLogoTiktok size={25} />,
+    arialLabel: "Visit out Tiktok page",
   },
   {
     href: "mailto:thecorporatebrandup@gmail.com?subject=Business Inquiry",
     socialIcon: <MdOutlineEmail size={29} />,
+    arialLabel: "Send us an email",
   },
 ];
 

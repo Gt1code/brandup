@@ -34,6 +34,7 @@ export default function Footer() {
               <a
                 key={item.href}
                 href={item.href}
+                aria-label={item.arialLabel}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition-colors hover:text-white"

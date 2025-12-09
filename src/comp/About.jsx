@@ -65,9 +65,9 @@ export default function About() {
         </div>
 
         {/* --- Why Choose Us --- */}
-        <section className="rounded-2xl bg-[#96ADA5] p-10 text-[#203959] shadow-lg">
+        <section className="rounded-2xl bg-[#A6BCB5] p-10 text-black shadow-lg">
           <h3 className="mb-4 text-2xl font-semibold">Why Choose Us</h3>
-          <p className="leading-relaxed opacity-90">
+          <p className="leading-relaxed opacity-100">
             Clients choose The Corporate BrandUP Ltd for our professionalism,
             transparency, and results-driven service.
             <br />

@@ -138,10 +138,6 @@ export const socialIconsContainer = [
     socialIcon: <BiLogoTiktok size={25} />,
   },
   {
-    href: "#",
-    socialIcon: <FaInstagram size={25} />,
-  },
-  {
     href: "mailto:thecorporatebrandup@gmail.com?subject=Business Inquiry",
     socialIcon: <MdOutlineEmail size={29} />,
   },

@@ -13,7 +13,7 @@ export default function Footer() {
       <article className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-8 px-6 md:grid-cols-4">
         {/* Brand */}
         <section>
-          <div className="flex items-center gap-2 text-2xl font-semibold text-white">
+          <div className="flex items-center gap-2 text-xl font-semibold text-white lg:text-2xl">
             <img
               src="/asset/nlogo.jpg"
               alt="BrandUp Logo"
@@ -24,9 +24,8 @@ export default function Footer() {
             </h2>
           </div>
           <p className="mt-4 text-sm leading-relaxed text-[#96ADA5]">
-            End-to-end corporate support covering business formation,
-            compliance, administrative services, brand identity development, and
-            business coaching delivered with clarity and integrity.
+            End-to-end corporate support in business formation, compliance,
+            admin services, branding, and coaching.
           </p>
 
           {/* Socials */}

@@ -53,7 +53,10 @@ export default function Navbar() {
         </a>
 
         {/* Mobile Toggle */}
-        <button className="md:hidden" onClick={() => setOpen(!open)}>
+        <button
+          className="border border-transparent focus-visible:border-white md:hidden"
+          onClick={() => setOpen(!open)}
+        >
           {open ? (
             <X className="h-6 w-6 cursor-pointer text-[#ABB7B3] hover:text-white" />
           ) : (

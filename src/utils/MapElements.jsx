@@ -6,7 +6,9 @@ import {
   CorporateSupportIcon,
 } from "../comp/Icon";
 
-import { FaWhatsapp, FaInstagram } from "react-icons/fa";
+// FaInstagram
+
+import { FaWhatsapp } from "react-icons/fa";
 import { BiLogoTiktok } from "react-icons/bi";
 import { MdOutlineEmail } from "react-icons/md";
 

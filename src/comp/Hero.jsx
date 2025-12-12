@@ -18,7 +18,10 @@ function Hero() {
             />
             <h2 className="mt-4 text-4xl text-white md:text-left md:text-5xl">
               THE <br /> CORPORATE <br /> BRAND
-              <span className="text-red-600">UP</span> LTD
+              <span className="text-red-600">UP</span>{" "}
+              <abbr className="border-0 no-underline" title="Limited">
+                LTD
+              </abbr>
             </h2>
           </div>
 

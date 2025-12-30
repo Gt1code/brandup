@@ -1,16 +1,83 @@
-# React + Vite
+**THE CORPORATE BRANDUP LTD – LANDING PAGE**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive landing page built for The Corporate BrandUp Limited, designed to showcase the brand’s services with a clean UI, smooth animations, and great user experience.
 
-Currently, two official plugins are available:
+🔗 Live Demo: https://thecorporatebrandup.netlify.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+📌 **PROJECT OVERVIEW**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project is a business landing page built to present a professional brand identity online. It focuses on simplicity, responsiveness, and performance while delivering a visually appealing user interface.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🚀 **FEATURES**
+
+Fully responsive design (mobile, tablet, and desktop friendly)
+
+Clean and modern UI
+
+Smooth animations using Framer Motion
+
+Optimized layout for performance and usability
+
+Reusable and well-structured components
+
+
+🛠️ **TECH STACK**
+
+React.js – Frontend library
+
+Tailwind CSS – Styling and layout
+
+Framer Motion – Animations and transitions
+
+Vite 
+
+
+🧠 **WHAT I LEARNED**
+
+Building responsive layouts using Tailwind CSS
+
+Creating smooth UI animations with Framer Motion
+
+Structuring React components for readability and reuse
+
+Improving UI/UX through spacing, typography, and layout
+
+
+⚙️ **INSTALLATION & SETUP**
+
+To run this project locally:
+
+# Clone the repository
+git clone https://github.com/Gt1code/brandup.git
+
+# Navigate into the project folder
+cd your-repo
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
+
+📸 **PREVIEW**
+
+You can view the live version here:
+👉 https://thecorporatebrandup.netlify.app
+
+
+👤 **AUTHOR**
+
+Godstime Sunday
+Frontend Web Developer
+
+GitHub: https://github.com/Gt1code
+
+Portfolio: https://sgodstime.vercel.app/
+
+
+📄 **LICENSE**
+
+This project is open-source and available under the MIT License.

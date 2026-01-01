@@ -1,5 +1,5 @@
 import React from "react";
-import LightRays from "@/component/LightRays";
+import LightRays from "@/components/react-bits-ui/LightRays";
 
 function Founder() {
   return (

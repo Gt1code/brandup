@@ -1,12 +1,12 @@
 import React from "react";
-import Navbar from "./comp/Navbar";
-import Hero from "./comp/Hero";
-import About from "./comp/About";
-import ServicesSection from "./comp/ServiceSection";
-import Founder from "./comp/Founder";
-import Testimonials from "./comp/Testimonials";
-import Faq from "./comp/Faq";
-import Footer from "./comp/Footer";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import ServicesSection from "./components/ServiceSection";
+import Founder from "./components/Founder";
+import Testimonials from "./components/Testimonials";
+import Faq from "./components/Faq";
+import Footer from "./components/Footer";
 
 function App() {
   return (

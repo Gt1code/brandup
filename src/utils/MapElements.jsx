@@ -4,7 +4,7 @@ import {
   BrandingIcon,
   CoachingIcon,
   CorporateSupportIcon,
-} from "../comp/Icon";
+} from "../components/Icon";
 
 // FaInstagram
 
@@ -12,6 +12,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { BiLogoTiktok } from "react-icons/bi";
 import { MdOutlineEmail } from "react-icons/md";
 
+// service details mapping
 const serviceDetails = [
   {
     id: "formation",
@@ -130,6 +131,7 @@ export const serviceMenuItem = [
 
 // Footer section
 
+// footer social icons
 export const socialIconsContainer = [
   {
     href: "https://wa.me/message/4F2ZBE3VOLNEC1",
@@ -148,6 +150,7 @@ export const socialIconsContainer = [
   },
 ];
 
+// footer links
 export const footerCompany = [
   { href: "#home", text: "Home" },
   { href: "#about", text: "About" },
@@ -155,6 +158,7 @@ export const footerCompany = [
   { href: "#faqs", text: "FAQs" },
 ];
 
+// footer services links
 export const footerServices = [
   { href: "#formation", text: "Business Formation" },
   { href: "#registration", text: "Business Registration" },

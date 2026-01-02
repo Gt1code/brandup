@@ -6,7 +6,7 @@ function Testimonials() {
       <div className="h-full w-full">
         <img
           className="w-full"
-          src="/asset/testimonials.jpg"
+          src="/asset/testimonials.webp"
           alt="testimonials image"
         />
       </div>

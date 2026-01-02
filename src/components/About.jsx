@@ -35,7 +35,7 @@ export default function About() {
               About Us
             </h2>
 
-            <p className="leading-relaxed text-[#203959]/80">
+            <p className="text-center leading-relaxed text-[#203959]/80 md:text-left">
               The Corporate BrandUP Ltd is a professional business development
               firm dedicated to helping entrepreneurs and organizations
               establish and scale their enterprises. We deliver end-to-end

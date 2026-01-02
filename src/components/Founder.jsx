@@ -22,13 +22,13 @@ function Founder() {
         />
       </div>
 
-      <div className="max-w-5/6 md:max-w-4xl">
-        <h2 className="font-hero mb-12 grid place-items-center text-3xl font-semibold text-[#203959] md:text-4xl">
+      <div className="max-w-5/6 px-4 py-12 md:max-w-4xl">
+        <h2 className="font-hero mb-12 grid place-items-center text-center text-3xl font-semibold text-[#203959] md:text-4xl">
           Meet The Founder
         </h2>
 
         <section className="flex flex-col-reverse gap-8 md:max-w-3xl md:flex-row lg:max-w-4xl">
-          <div className="md:flex-1">
+          <div className="text-center md:flex-1 md:text-left">
             <p>
               Mr. Wilson is the Founder and Chief Executive Officer of The
               Corporate BrandUP Ltd, a business development and corporate

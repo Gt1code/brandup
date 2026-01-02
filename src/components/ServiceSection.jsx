@@ -12,7 +12,7 @@ export default function ServicesSection() {
           Our Professional Services
         </h2>
 
-        <div className="grid items-stretch gap-8 md:grid-cols-2">
+        <div className="place grid items-stretch gap-8 sm:grid-cols-2">
           {serviceDetails.map((item) => (
             <div
               key={item.id}

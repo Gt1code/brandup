@@ -4,7 +4,7 @@ function Hero() {
   return (
     <article
       id="home"
-      className="relative flex min-h-screen w-full justify-center bg-[#101010]/60 bg-[url('/asset/hero.jpeg')] bg-cover bg-center bg-no-repeat p-4 pt-25 text-white bg-blend-soft-light"
+      className="relative flex min-h-screen w-full justify-center bg-[#101010]/60 bg-[url('/asset/hero.webp')] bg-cover bg-center bg-no-repeat p-4 pt-25 text-white bg-blend-soft-light"
     >
       <div className="relative flex w-[95%] flex-col justify-around md:max-w-5xl">
         <section className="font-hero flex flex-col items-center justify-center text-center">

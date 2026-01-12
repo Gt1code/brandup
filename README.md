@@ -4,11 +4,13 @@ A modern and responsive landing page built for The Corporate BrandUp Limited, de
 
 🔗 Live Demo: https://thecorporatebrandup.netlify.app
 
+**SCREENSHOTS**
+![Mobile View](public/screenshots/brandup-mobile.jpeg)
+![Mobile View](public/screenshots/brandup-desktop.jpeg)
 
 📌 **PROJECT OVERVIEW**
 
 This project is a business landing page built to present a professional brand identity online. It focuses on simplicity, responsiveness, and performance while delivering a visually appealing user interface.
-
 
 🚀 **FEATURES**
 
@@ -22,7 +24,6 @@ Optimized layout for performance and usability
 
 Reusable and well-structured components
 
-
 🛠️ **TECH STACK**
 
 React.js – Frontend library
@@ -31,8 +32,7 @@ Tailwind CSS – Styling and layout
 
 Framer Motion – Animations and transitions
 
-Vite 
-
+Vite
 
 🧠 **WHAT I LEARNED**
 
@@ -44,29 +44,30 @@ Structuring React components for readability and reuse
 
 Improving UI/UX through spacing, typography, and layout
 
-
 ⚙️ **INSTALLATION & SETUP**
 
 To run this project locally:
 
 # Clone the repository
+
 git clone https://github.com/Gt1code/brandup.git
 
 # Navigate into the project folder
+
 cd your-repo
 
 # Install dependencies
+
 npm install
 
 # Start the development server
-npm run dev
 
+npm run dev
 
 📸 **PREVIEW**
 
 You can view the live version here:
 👉 https://thecorporatebrandup.netlify.app
-
 
 👤 **AUTHOR**
 
@@ -76,7 +77,6 @@ Frontend Web Developer
 GitHub: https://github.com/Gt1code
 
 Portfolio: https://sgodstime.vercel.app/
-
 
 📄 **LICENSE**
 

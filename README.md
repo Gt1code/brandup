@@ -2,7 +2,7 @@
 
 A modern and responsive landing page built for The Corporate BrandUp Limited, designed to showcase the brand’s services with a clean UI, smooth animations, and great user experience.
 
-🔗 Live site: https://thecorporatebrandupltd.com
+🔗 Live site: https://thecorporatebrandupltd.vercel.app/
 
 **SCREENSHOT**
 ![Desktop View](public/screenshots/d-brandup.jpeg)
@@ -66,7 +66,7 @@ npm run dev
 📸 **PREVIEW**
 
 You can view the live version here:
-👉 https://thecorporatebrandupltd.com
+👉 https://thecorporatebrandupltd.vercel.app/
 
 👤 **AUTHOR**
 

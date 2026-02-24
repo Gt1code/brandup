@@ -121,7 +121,7 @@ export default function Footer() {
         <p>&copy; 2025 The Corporate BrandUp LTD. All rights reserved.</p>
         <p className="flex justify-center">
           <a
-            className="mt-4 flex w-fit items-center justify-center gap-2 rounded-2xl border border-black p-2 hover:opacity-85"
+            className="mt-4 flex w-fit items-center justify-center gap-2 rounded-2xl border border-[#416772] p-2 hover:opacity-85"
             href="#home"
           >
             Back To Top

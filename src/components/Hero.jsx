@@ -25,7 +25,7 @@ function Hero() {
             </h2>
           </div>
 
-          <p className="bg-[rgba(218, 237, 232, 0.13)] mt-6 w-fit rounded-2xl p-2 text-[#fdfee3] shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur-[6.4px] md:mt-4 md:text-xl">
+          <p className="bg-[rgba(218, 237, 232, 0.13)] mt-6 w-fit rounded-2xl p-2 text-center text-[#fdfee3] shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur-[6.4px] md:mt-4 md:text-xl">
             Start, Structure & Grow Your Business with Confidence.
           </p>
         </section>

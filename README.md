@@ -2,15 +2,14 @@
 
 A modern and responsive landing page built for The Corporate BrandUp Limited, designed to showcase the brand’s services with a clean UI, smooth animations, and great user experience.
 
-🔗 Live Demo: https://thecorporatebrandup.netlify.app
+🔗 Live site: https://thecorporatebrandupltd.com
 
-**SCREENSHOTS**
-![Mobile View](public/screenshots/brandup-mobile.jpeg)
-![Mobile View](public/screenshots/brandup-desktop.jpeg)
+**SCREENSHOT**
+![Desktop View](public/screenshots/d-brandup.jpeg)
 
 📌 **PROJECT OVERVIEW**
 
-This project is a business landing page built to present a professional brand identity online. It focuses on simplicity, responsiveness, and performance while delivering a visually appealing user interface.
+This is a business landing page built to present a professional brand identity online. It focuses on simplicity, responsiveness, and performance while delivering a visually appealing user interface.
 
 🚀 **FEATURES**
 
@@ -67,7 +66,7 @@ npm run dev
 📸 **PREVIEW**
 
 You can view the live version here:
-👉 https://thecorporatebrandup.netlify.app
+👉 https://thecorporatebrandupltd.com
 
 👤 **AUTHOR**
 

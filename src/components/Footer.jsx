@@ -5,6 +5,8 @@ import {
 } from "@/utils/MapElements";
 
 export default function Footer() {
+  const date = new Date();
+
   return (
     <footer
       id="contact"
@@ -118,7 +120,10 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <section className="mt-12 border-t border-[#416772] pt-6 text-center text-sm">
-        <p>&copy; 2025 The Corporate BrandUp LTD. All rights reserved.</p>
+        <p>
+          &copy; {date.getFullYear()} The Corporate BrandUp LTD. All rights
+          reserved.
+        </p>
         <p className="flex justify-center">
           <a
             className="mt-4 flex w-fit items-center justify-center gap-2 rounded-2xl border border-[#416772] p-2 hover:opacity-85"

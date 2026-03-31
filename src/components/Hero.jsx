@@ -39,7 +39,7 @@ function Hero() {
             </p>
           </div>
           <div className="hidden h-full w-0.5 bg-white md:block"></div>
-          <div className="flex flex-1 justify-center text-center sm:flex-[1.2] md:flex-1 md:justify-end">
+          <section className="flex flex-1 justify-center text-center sm:flex-[1.2] md:flex-1 md:justify-end">
             <div className="">
               <h2 className="text-xl font-bold text-yellow-400">
                 Business Hours
@@ -47,7 +47,7 @@ function Hero() {
               <p>Monday - Friday: 9am - 6pm</p>
               <p>Saturday: 9am - 12pm</p>
             </div>
-          </div>
+          </section>
         </section>
       </div>
     </article>

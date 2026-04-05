@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import WhyChooseUs from "./WhyChooseUs";
 
 const fadeUp = {
   hidden: {
@@ -19,44 +20,46 @@ export default function About() {
   return (
     <section
       id="about"
-      className="flex min-h-screen w-full items-center justify-center bg-[#F5F7F8] px-6 py-20 md:scroll-mt-6"
+      className="flex min-h-screen w-full items-center justify-center bg-[#F5F7F8] px-8 py-20 md:scroll-mt-6"
     >
       <div className="mx-auto max-w-6xl space-y-8">
-        {/* --- About Us Intro --- */}
+        {/* About Us Intro  */}
         <motion.section
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          className="flex flex-col-reverse items-center gap-10 md:flex-row"
+          className="flex flex-col items-center"
         >
-          <div className="flex-1 space-y-4">
-            <h2 className="font-hero mb-12 grid place-items-center text-3xl font-bold text-[#203959] md:text-4xl">
-              About Us
-            </h2>
+          <h2 className="font-hero mb-12 grid place-items-center text-3xl font-bold text-[#203959] md:text-4xl">
+            About Us
+          </h2>
 
-            <p className="text-center leading-relaxed text-[#203959]/80 md:text-left">
-              The Corporate BrandUP Ltd is a professional business development
-              firm dedicated to helping entrepreneurs and organizations
-              establish and scale their enterprises. We deliver end-to-end
-              corporate support including company formation, compliance
-              management, administrative services, brand identity development,
-              and business coaching designed with clarity, integrity, and
-              precision.
+          <div className="flex flex-col-reverse items-center gap-10 md:flex-row">
+            <p className="flex-1 text-center leading-relaxed text-[#203959]/80 md:text-left">
+              Launched in 2023, The Corporate BrandUp Ltd is a dynamic partner
+              for Nigerian entrepreneurs and expanding businesses. We specialize
+              in comprehensive business development services, including
+              professional business formation, CAC registration, and brand
+              identity development. Our expertise provides a solid foundation
+              for growth, ensuring compliance and strategic direction. We offer
+              tailored support and seamless processes to help you navigate the
+              complexities of launching and scaling your enterprise with
+              confidence. Our mission is to empower your business to thrive from
+              its inception to long-term success.
             </p>
-          </div>
-
-          <div className="flex-1 overflow-hidden rounded-2xl shadow-xl">
-            <img
-              src="/asset/about-img.webp"
-              className="h-[260px] w-full object-cover"
-              alt="About Corporate Brandup"
-            />
+            <div className="flex-1 overflow-hidden rounded-2xl shadow-xl">
+              <img
+                src="/asset/about-img.webp"
+                className="h-[260px] w-full object-cover"
+                alt="About Corporate Brandup"
+              />
+            </div>
           </div>
         </motion.section>
 
         <div className="flex flex-col gap-8 md:flex-row md:justify-between">
-          {/* --- What We Do --- */}
+          {/* What We Do */}
           <motion.section
             variants={fadeUp}
             initial="hidden"
@@ -77,7 +80,7 @@ export default function About() {
             </p>
           </motion.section>
 
-          {/* --- Our Approach --- */}
+          {/* Our Approach */}
           <motion.section
             variants={fadeUp}
             initial="hidden"
@@ -99,28 +102,7 @@ export default function About() {
           </motion.section>
         </div>
 
-        {/* --- Why Choose Us --- */}
-        <motion.section
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          className="rounded-2xl bg-[#A6BCB5] p-10 text-black shadow-lg"
-        >
-          <h3 className="mb-4 text-2xl font-semibold">Why Choose Us</h3>
-          <p className="leading-relaxed opacity-100">
-            Clients choose The Corporate BrandUP Ltd for our professionalism,
-            transparency, and results-driven service.
-            <br />
-            <br />
-            We provide clear pricing, easy-to-follow processes, and a dedicated
-            team focused on helping businesses succeed.
-            <br />
-            <br />
-            Ready to get started? Book a consultation or contact us to discuss
-            how we can support your business.
-          </p>
-        </motion.section>
+        <WhyChooseUs />
       </div>
     </section>
   );

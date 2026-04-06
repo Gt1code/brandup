@@ -1,4 +1,5 @@
 import { navItems } from "@/utils/MapElements";
+import { Link } from "react-router-dom";
 
 const MobileMenu = ({ open, setOpen }) => {
   return (
@@ -10,28 +11,49 @@ const MobileMenu = ({ open, setOpen }) => {
         {navItems.map((item) => (
           <li key={item.label}>
             {!item.children ? (
-              <a
-                onClick={() => setOpen(!open)}
-                href={item.href}
-                className="block py-2 select-none hover:text-[#96ADA5]"
-              >
-                {item.label}
-              </a>
+              item.href.startsWith("#") ? (
+                <a
+                  href={item.href}
+                  onClick={() => setOpen(false)}
+                  className="block py-2 select-none hover:text-[#96ADA5]"
+                >
+                  {item.label}
+                </a>
+              ) : (
+                <Link
+                  to={item.href}
+                  onClick={() => setOpen(false)}
+                  className="block py-2 select-none hover:text-[#96ADA5]"
+                >
+                  {item.label}
+                </Link>
+              )
             ) : (
               <details className="group">
                 <summary className="cursor-pointer py-2 select-none hover:text-[#96ADA5]">
                   {item.label}
                 </summary>
+
                 <ul className="mt-2 flex flex-col gap-2 pl-4">
                   {item.children.map((child) => (
                     <li key={child.label}>
-                      <a
-                        onClick={() => setOpen(!open)}
-                        href={child.href}
-                        className="block py-1 text-sm hover:text-[#96ADA5]"
-                      >
-                        {child.label}
-                      </a>
+                      {child.href.startsWith("#") ? (
+                        <a
+                          href={child.href}
+                          onClick={() => setOpen(false)}
+                          className="block py-1 text-sm hover:text-[#96ADA5]"
+                        >
+                          {child.label}
+                        </a>
+                      ) : (
+                        <Link
+                          to={child.href}
+                          onClick={() => setOpen(false)}
+                          className="block py-1 text-sm hover:text-[#96ADA5]"
+                        >
+                          {child.label}
+                        </Link>
+                      )}
                     </li>
                   ))}
                 </ul>

@@ -4,6 +4,7 @@ import {
   footerLegal,
   socialIconsContainer,
 } from "@/utils/MapElements";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   const date = new Date();
@@ -156,12 +157,12 @@ export default function Footer() {
           >
             {footerLegal.map((item, i) => (
               <span key={item.href} className="flex items-center gap-5">
-                <a
-                  href={item.href}
+                <Link
+                  to={item.href}
                   className="text-[#96ADA5] underline-offset-4 transition-colors hover:text-white hover:underline"
                 >
                   {item.text}
-                </a>
+                </Link>
                 {i < footerLegal.length - 1 && (
                   <span className="text-[#416772]" aria-hidden>
                     ·

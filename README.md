@@ -5,7 +5,7 @@ A modern and responsive landing page built for The Corporate BrandUp Limited, de
 🔗 Live site: https://www.thecorporatebrandupltd.com/
 
 **SCREENSHOT**
-![Desktop View](public/screenshots/d-brandup.jpeg)
+![Desktop View](public/screenshots/brandup-current.jpeg)
 
 📌 **PROJECT OVERVIEW**
 

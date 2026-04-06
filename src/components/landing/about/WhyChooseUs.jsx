@@ -125,9 +125,6 @@ export default function WhyChooseUs() {
               <span className="mb-2 inline-block rounded-full border border-[#203959]/20 bg-[#203959]/8 px-4 py-1 text-xs font-semibold tracking-widest text-[#203959]/60 uppercase">
                 Our Mission
               </span>
-              {/* <h3 className="text-2xl font-bold text-[#203959] md:text-3xl">
-                Five Pillars of Purpose
-              </h3> */}
             </div>
             <p className="max-w-sm text-sm leading-relaxed text-[#203959]/50 md:text-right">
               Every pillar reflects a commitment we make to each client we

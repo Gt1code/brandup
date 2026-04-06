@@ -1,6 +1,7 @@
 import {
   footerCompany,
   footerServices,
+  footerLegal,
   socialIconsContainer,
 } from "@/utils/MapElements";
 
@@ -12,9 +13,9 @@ export default function Footer() {
       id="contact"
       className="scroll-mt-12 bg-[#203959] pt-16 pb-10 text-[#ABB7B3]"
     >
-      <article className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-8 px-6 md:grid-cols-4">
-        {/* Brand */}
-        <section>
+      <article className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-8 px-6 sm:grid-cols-2 md:grid-cols-5">
+        {/* ── Brand ── */}
+        <section className="sm:col-span-2 md:col-span-1">
           <div className="flex items-center gap-2 text-xl font-semibold text-white lg:text-2xl">
             <img
               src="/asset/nlogo.jpg"
@@ -47,7 +48,7 @@ export default function Footer() {
           </section>
         </section>
 
-        {/* Company Links */}
+        {/* ── Company Links ── */}
         <section>
           <h3 className="mb-4 text-lg font-semibold text-white">Company</h3>
           <ul className="space-y-3">
@@ -55,7 +56,7 @@ export default function Footer() {
               <li key={company.href}>
                 <a
                   href={company.href}
-                  className="transition-colors hover:text-white"
+                  className="text-sm transition-colors hover:text-white"
                 >
                   {company.text}
                 </a>
@@ -64,7 +65,7 @@ export default function Footer() {
           </ul>
         </section>
 
-        {/* Services */}
+        {/* ── Services ── */}
         <section>
           <h3 className="mb-4 text-lg font-semibold text-white">Services</h3>
           <ul className="space-y-3">
@@ -72,7 +73,7 @@ export default function Footer() {
               <li key={service.href}>
                 <a
                   href={service.href}
-                  className="transition-colors hover:text-white"
+                  className="text-sm transition-colors hover:text-white"
                 >
                   {service.text}
                 </a>
@@ -81,7 +82,24 @@ export default function Footer() {
           </ul>
         </section>
 
-        {/* Contact Section */}
+        {/* ── Legal ── */}
+        <section>
+          <h3 className="mb-4 text-lg font-semibold text-white">Legal</h3>
+          <ul className="space-y-3">
+            {footerLegal.map((item) => (
+              <li key={item.href}>
+                <a
+                  href={item.href}
+                  className="text-sm transition-colors hover:text-white"
+                >
+                  {item.text}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        {/* ── Contact ── */}
         <section>
           <h3 className="mb-4 text-lg font-semibold text-white">Contact</h3>
           <ul className="space-y-3 text-sm">
@@ -91,15 +109,18 @@ export default function Footer() {
                 className="transition-colors duration-200 ease-in-out hover:text-white"
                 href="mailto:thecorporatebrandup@gmail.com"
                 target="_blank"
+                rel="noopener noreferrer"
               >
-                thecorporatebrandup<span className="md:hidden">@gmail.com</span>
+                thecorporatebrandup
+                <span className="md:hidden">@gmail.com</span>
               </a>
             </li>
             <li>
               Phone:{" "}
               <a
-                href="tel:+234 906 420 7254"
+                href="tel:+2349064207254"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-white"
               >
                 +234 906 420 7254
@@ -110,7 +131,8 @@ export default function Footer() {
                 Business Hours:
               </span>
               <br />
-              <span>Mon &ndash; Fri: 9am &ndash; 6pm</span> <br />
+              <span>Mon &ndash; Fri: 9am &ndash; 6pm</span>
+              <br />
               <span>Sat: 9am &ndash; 12pm</span>
             </li>
             <li>Location: Delta, Nigeria</li>
@@ -118,16 +140,41 @@ export default function Footer() {
         </section>
       </article>
 
-      {/* Bottom Bar */}
-      <section className="mt-12 border-t border-[#416772] pt-6 text-center text-sm">
-        <p>
-          &copy; {date.getFullYear()} The Corporate BrandUp LTD. All rights
-          reserved.
-        </p>
-        <p className="flex justify-center">
+      {/* ── Bottom Bar ── */}
+      <section className="mt-12 border-t border-[#416772] px-6 pt-6">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 text-sm sm:flex-row">
+          {/* Copyright */}
+          <p className="text-center text-[#96ADA5] sm:text-left">
+            &copy; {date.getFullYear()} The Corporate BrandUp LTD. All rights
+            reserved.
+          </p>
+
+          {/* Legal inline links */}
+          <nav
+            aria-label="Legal links"
+            className="flex flex-wrap justify-center gap-x-5 gap-y-2"
+          >
+            {footerLegal.map((item, i) => (
+              <span key={item.href} className="flex items-center gap-5">
+                <a
+                  href={item.href}
+                  className="text-[#96ADA5] underline-offset-4 transition-colors hover:text-white hover:underline"
+                >
+                  {item.text}
+                </a>
+                {i < footerLegal.length - 1 && (
+                  <span className="text-[#416772]" aria-hidden>
+                    ·
+                  </span>
+                )}
+              </span>
+            ))}
+          </nav>
+
+          {/* Back to top */}
           <a
-            className="mt-4 flex w-fit items-center justify-center gap-2 rounded-2xl border border-[#416772] p-2 hover:opacity-85"
             href="#home"
+            className="flex items-center gap-2 rounded-2xl border border-[#416772] px-3 py-2 text-sm transition-opacity hover:opacity-75"
           >
             Back To Top
             <svg
@@ -136,7 +183,7 @@ export default function Footer() {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="size-6"
+              className="size-5"
             >
               <path
                 strokeLinecap="round"
@@ -145,7 +192,7 @@ export default function Footer() {
               />
             </svg>
           </a>
-        </p>
+        </div>
       </section>
     </footer>
   );

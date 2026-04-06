@@ -167,4 +167,11 @@ export const footerServices = [
   { href: "#support", text: "Administrative Support" },
 ];
 
+// legal links
+export const footerLegal = [
+  { href: "/privacy-policy", text: "Privacy Policy" },
+  { href: "/refund-policy", text: "Refund Policy" },
+  { href: "/terms-of-service", text: "Terms of Service" },
+];
+
 export default serviceDetails;

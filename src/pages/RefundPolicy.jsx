@@ -61,6 +61,9 @@ export default function RefundPolicy() {
           Send refund requests to:{" "}
           <a
             href="mailto:thecorporatebrandup@gmail.com?subject=Refund Request"
+            aria-label="Make a refund request"
+            target="_blank"
+            rel="noopener noreferrer"
             className="font-medium text-[#416772] underline underline-offset-4 hover:text-[#203959]"
           >
             thecorporatebrandup@gmail.com

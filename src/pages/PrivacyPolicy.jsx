@@ -104,7 +104,10 @@ export default function PrivacyPolicy() {
         <p>
           Requests can be made via:{" "}
           <a
-            href="mailto:thecorporatebrandup@gmail.com"
+            href="mailto:thecorporatebrandup@gmail.com?subject=Business Request"
+            aria-label="Make a business request"
+            target="_blank"
+            rel="noopener noreferrer"
             className="font-medium text-[#416772] underline underline-offset-4 hover:text-[#203959]"
           >
             thecorporatebrandup@gmail.com

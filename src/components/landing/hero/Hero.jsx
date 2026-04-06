@@ -1,4 +1,5 @@
 import React from "react";
+import { WhatsAppIcon } from "@/components/Icon";
 
 function Hero() {
   return (
@@ -6,6 +7,18 @@ function Hero() {
       id="home"
       className="relative flex min-h-screen w-full justify-center bg-[#101010]/60 bg-[url('/asset/hero.webp')] bg-cover bg-center bg-no-repeat p-4 pt-25 text-white bg-blend-soft-light"
     >
+      {/* whatsapp icon */}
+      <div className="fixed bottom-6 left-6 z-40 md:hidden">
+        <a
+          href="https://wa.me/message/4F2ZBE3VOLNEC1"
+          aria-label="Chat with us on whatsapp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <WhatsAppIcon />
+        </a>
+      </div>
+
       <div className="relative flex w-[95%] flex-col justify-around md:max-w-5xl">
         <section className="font-hero flex flex-col items-center justify-center text-center">
           <div className="flex flex-col items-center md:flex-row md:items-center md:justify-center md:gap-4">

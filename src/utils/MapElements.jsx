@@ -114,6 +114,14 @@ export const navItems = [
   },
   { label: "Testimonials", href: "#testimonials" },
   { label: "FAQs", href: "#faqs" },
+  {
+    label: "Legal Links",
+    children: [
+      { label: "Privacy Policy", href: "/privacy-policy" },
+      { label: "Refund Policy", href: "/refund-policy" },
+      { label: "Terms of Service", href: "/terms-of-service" },
+    ],
+  },
 ];
 
 export const aboutMenuItem = [

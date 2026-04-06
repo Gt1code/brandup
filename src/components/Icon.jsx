@@ -1,3 +1,5 @@
+import { siWhatsapp } from "simple-icons";
+
 export const FormationIcon = ({
   size = 32,
   color = "#008576",
@@ -106,3 +108,18 @@ export const CorporateSupportIcon = ({ size = 36, color = "#203959" }) => (
     <path d="M6 16h.01" />
   </svg>
 );
+
+export function WhatsAppIcon() {
+  return (
+    <svg
+      role="img"
+      viewBox="0 0 24 24"
+      width="40"
+      height="40"
+      fill={`#${siWhatsapp.hex}`}
+    >
+      <title>{siWhatsapp.title}</title>
+      <path d={siWhatsapp.path} />
+    </svg>
+  );
+}

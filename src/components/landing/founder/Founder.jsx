@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { ExternalLink } from "lucide-react";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -24,12 +25,6 @@ const stagger = {
   visible: { transition: { staggerChildren: 0.15 } },
 };
 
-const highlights = [
-  { label: "Founded", value: "2023" },
-  { label: "Businesses Supported", value: "200+" },
-  { label: "Years Experience", value: "10+" },
-];
-
 export default function Founder() {
   return (
     <article
@@ -54,7 +49,7 @@ export default function Founder() {
       />
 
       <div className="relative mx-auto max-w-6xl px-6 py-20">
-        {/* ── Section label ── */}
+        {/* Section label*/}
         <motion.div
           variants={fadeUp}
           initial="hidden"
@@ -94,34 +89,18 @@ export default function Founder() {
                 {/* Gradient overlay at bottom */}
                 <div className="absolute right-0 bottom-0 left-0 h-28 bg-linear-to-t from-[#203959]/90 to-transparent" />
 
-                {/* Name badge overlaid on image */}
                 <div className="absolute right-0 bottom-0 left-0 px-6 pb-5">
-                  <p className="text-lg font-bold text-[#A6BCB5]">
-                    Efe Wilson Aghwata
-                  </p>
-                  <p className="text-sm font-medium text-white/70">
-                    Founder &amp; Chief Executive Officer
-                  </p>
+                  <div className="flex w-full flex-col items-center justify-center">
+                    <p className="text-lg font-bold text-[#A6BCB5]">
+                      Efe Wilson Aghwata
+                    </p>
+                    <p className="text-sm font-medium text-white/70">
+                      Founder &amp; Chief Executive Officer
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-
-            {/* Stats row */}
-            {/* <div className="mt-8 grid w-full max-w-[320px] grid-cols-3 gap-3 md:max-w-full">
-              {highlights.map((h) => (
-                <div
-                  key={h.label}
-                  className="flex flex-col items-center rounded-2xl border border-white/10 bg-white/5 px-3 py-4 text-center backdrop-blur-sm"
-                >
-                  <span className="text-xl font-bold text-[#A6BCB5] md:text-2xl">
-                    {h.value}
-                  </span>
-                  <span className="mt-1 text-[10px] font-medium tracking-wider text-white/45 uppercase md:text-xs">
-                    {h.label}
-                  </span>
-                </div>
-              ))}
-            </div> */}
           </motion.div>
 
           {/* RIGHT Text panel  */}
@@ -132,7 +111,6 @@ export default function Founder() {
             viewport={{ once: true, amount: 0.2 }}
             className="flex flex-col gap-6 text-center md:text-left"
           >
-            {/* Pull quote */}
             <motion.blockquote
               variants={fadeRight}
               className="relative border-l-0 pl-0 md:border-l-4 md:border-[#416772] md:pl-5"
@@ -144,15 +122,6 @@ export default function Founder() {
               </p>
             </motion.blockquote>
 
-            {/* Divider */}
-            <motion.div
-              variants={fadeRight}
-              className="flex justify-center md:justify-start"
-            >
-              <div className="h-px w-12 bg-[#A6BCB5]/40" />
-            </motion.div>
-
-            {/* Body paragraphs */}
             <motion.p
               variants={fadeRight}
               className="leading-[1.85] text-white/75"
@@ -187,7 +156,6 @@ export default function Founder() {
               a clear vision.
             </motion.p>
 
-            {/* Signature / credential tags */}
             <motion.div
               variants={fadeRight}
               className="mt-2 flex flex-wrap justify-center gap-2 md:justify-start"
@@ -213,12 +181,15 @@ export default function Founder() {
               className="mt-4 flex justify-center md:justify-start"
             >
               <a
-                href="#contact"
+                href="https://wa.me/message/4F2ZBE3VOLNEC1"
+                aria-label="Chat with us on whatsapp"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group inline-flex items-center gap-2 rounded-full bg-[#416772] px-7 py-3 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:bg-[#A6BCB5] hover:text-[#203959] hover:shadow-xl"
               >
                 Book a Consultation
                 <span className="transition-transform duration-300 group-hover:translate-x-1">
-                  →
+                  <ExternalLink />
                 </span>
               </a>
             </motion.div>

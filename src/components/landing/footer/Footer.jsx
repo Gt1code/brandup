@@ -89,12 +89,12 @@ export default function Footer() {
           <ul className="space-y-3">
             {footerLegal.map((item) => (
               <li key={item.href}>
-                <a
-                  href={item.href}
+                <Link
+                  to={item.href}
                   className="text-sm transition-colors hover:text-white"
                 >
                   {item.text}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

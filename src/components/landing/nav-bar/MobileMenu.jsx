@@ -6,6 +6,12 @@ const MobileMenu = ({ open, setOpen }) => {
     <section
       className={`absolute right-0 z-50 flex h-[calc(100vh-56px)] w-full max-w-[440px] transform flex-col border-t border-[#416772] bg-[#203959] shadow-md shadow-black transition-transform duration-400 ease-out md:hidden ${open ? "translate-x-0" : "translate-x-full"} `}
     >
+      {/* Diagonal stripe accent */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute top-0 left-0 h-full w-1 bg-linear-to-b from-transparent via-[#A6BCB5]/30 to-transparent md:w-0.5"
+      />
+
       {/* Scrollable Nav Items */}
       <ul className="flex flex-col gap-4 overflow-y-auto p-4">
         {navItems.map((item) => (
@@ -67,7 +73,7 @@ const MobileMenu = ({ open, setOpen }) => {
       <a
         onClick={() => setOpen(!open)}
         href="#contact"
-        className="mx-4 mt-auto mb-4 rounded-xl bg-[#96ADA5] px-5 py-3 text-center font-semibold text-[#203959] transition-colors hover:bg-[#416772] hover:text-[#ABB7B3]"
+        className="mx-4 mt-auto mb-4 rounded-xl bg-[#A6BCB5] px-5 py-3 text-center font-semibold text-[#203959] transition-colors hover:bg-[#416772] hover:text-white"
       >
         Contact Us
       </a>

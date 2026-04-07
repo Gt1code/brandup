@@ -6,7 +6,12 @@ import PolicyLayout, {
 
 export default function PrivacyPolicy() {
   return (
-    <PolicyLayout badge="Legal" title="Privacy Policy" lastUpdated="05/01/2026">
+    <PolicyLayout
+      badge="Legal"
+      title="Privacy Policy"
+      lastUpdated="05/01/2026"
+      filePath="/pdfs/TCBP-Privacy-Policy.pdf"
+    >
       {/* Intro */}
       <PolicyHighlight>
         The Corporate BrandUp Ltd ("we", "our", or "the Company") is committed

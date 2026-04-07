@@ -6,7 +6,11 @@ import PolicyLayout, {
 
 export default function RefundPolicy() {
   return (
-    <PolicyLayout badge="Legal" title="Refund Policy">
+    <PolicyLayout
+      badge="Legal"
+      title="Refund Policy"
+      filePath="/pdfs/TCBP-Refund-Policy.pdf"
+    >
       {/* Intro */}
       <PolicyHighlight>
         The Corporate BrandUp Ltd maintains a transparent and fair refund

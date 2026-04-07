@@ -137,6 +137,36 @@ export const serviceMenuItem = [
   { href: "#support", text: "Corporate & Administrative Support" },
 ];
 
+// mission
+
+export const missionItems = [
+  {
+    number: "01",
+    title: "Simplify Business Legalities",
+    body: "Demystifying the complexities of business registration and legal compliance, making it easy and accessible for every entrepreneur to build on a solid, legal foundation.",
+  },
+  {
+    number: "02",
+    title: "Empower through Structure",
+    body: 'Providing startups and SMEs with the organizational frameworks and corporate structures necessary to transition from "side hustles" to professional, scaleable enterprises.',
+  },
+  {
+    number: "03",
+    title: "Foster Sustainable Growth",
+    body: "Offering strategic guidance and brand-building tools that ensure long-term sustainability and profitability for our clients in a competitive market.",
+  },
+  {
+    number: "04",
+    title: "Bridge the Professionalism Gap",
+    body: "Equipping small business owners with the corporate identity and professional polish required to attract premium investors, partners, and customers.",
+  },
+  {
+    number: "05",
+    title: "Cultivate Entrepreneurial Excellence",
+    body: "Serving as a lifelong partner for business owners, providing the continuous support and clarity needed to navigate the challenges of the modern business world with confidence.",
+  },
+];
+
 // Footer section
 
 // footer social icons

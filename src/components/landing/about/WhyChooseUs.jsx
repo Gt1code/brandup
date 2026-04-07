@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { missionItems } from "@/utils/MapElements";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 50 },
@@ -17,34 +18,6 @@ const staggerContainer = {
     },
   },
 };
-
-const missionItems = [
-  {
-    number: "01",
-    title: "Simplify Business Legalities",
-    body: "Demystifying the complexities of business registration and legal compliance, making it easy and accessible for every entrepreneur to build on a solid, legal foundation.",
-  },
-  {
-    number: "02",
-    title: "Empower through Structure",
-    body: 'Providing startups and SMEs with the organizational frameworks and corporate structures necessary to transition from "side hustles" to professional, scaleable enterprises.',
-  },
-  {
-    number: "03",
-    title: "Foster Sustainable Growth",
-    body: "Offering strategic guidance and brand-building tools that ensure long-term sustainability and profitability for our clients in a competitive market.",
-  },
-  {
-    number: "04",
-    title: "Bridge the Professionalism Gap",
-    body: "Equipping small business owners with the corporate identity and professional polish required to attract premium investors, partners, and customers.",
-  },
-  {
-    number: "05",
-    title: "Cultivate Entrepreneurial Excellence",
-    body: "Serving as a lifelong partner for business owners, providing the continuous support and clarity needed to navigate the challenges of the modern business world with confidence.",
-  },
-];
 
 export default function WhyChooseUs() {
   return (
@@ -89,7 +62,7 @@ export default function WhyChooseUs() {
           />
 
           {/* label pill */}
-          <span className="mb-6 inline-block rounded-full border border-white/20 bg-white/10 px-4 py-1 text-xs font-semibold tracking-widest text-white/70 uppercase">
+          <span className="font-hero mb-6 inline-block rounded-full border border-white/20 bg-white/10 px-4 py-1 text-sm font-bold tracking-widest text-white/70 uppercase">
             Our Vision
           </span>
 
@@ -122,7 +95,7 @@ export default function WhyChooseUs() {
             className="mb-10 flex flex-col items-start gap-3 md:flex-row md:items-end md:justify-between"
           >
             <div>
-              <span className="mb-2 inline-block rounded-full border border-[#203959]/20 bg-[#203959]/8 px-4 py-1 text-xs font-semibold tracking-widest text-[#203959]/60 uppercase">
+              <span className="font-hero mb-2 inline-block rounded-full border border-[#203959]/20 bg-[#203959]/8 px-4 py-1 text-sm font-bold tracking-widest text-[#203959]/60 uppercase">
                 Our Mission
               </span>
             </div>

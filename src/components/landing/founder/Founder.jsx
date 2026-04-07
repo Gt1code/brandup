@@ -31,7 +31,6 @@ export default function Founder() {
       id="founder"
       className="relative w-full scroll-mt-14 overflow-hidden bg-[#203959] px-0"
     >
-      {/* ── Background geometry ── */}
       {/* Large arc top-right */}
       <div
         aria-hidden
@@ -70,7 +69,7 @@ export default function Founder() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.25 }}
-            className="flex flex-col items-center md:items-start"
+            className="flex flex-col items-center gap-6"
           >
             {/* Image frame */}
             <div className="relative w-full max-w-[320px] md:max-w-full">
@@ -101,6 +100,44 @@ export default function Founder() {
                 </div>
               </div>
             </div>
+
+            <motion.div
+              variants={fadeRight}
+              className="mt-2 hidden flex-wrap items-center justify-center gap-2 md:flex lg:hidden"
+            >
+              {[
+                "Business Formation",
+                "Brand Development",
+                "Corporate Advisory",
+                "CAC Registration",
+              ].map((tag) => (
+                <span
+                  key={tag}
+                  className="rounded-full border border-[#A6BCB5]/25 bg-[#A6BCB5]/10 px-3 py-1 text-xs font-medium text-[#A6BCB5]"
+                >
+                  {tag}
+                </span>
+              ))}
+            </motion.div>
+
+            {/* CTA */}
+            <motion.div
+              variants={fadeRight}
+              className="mt-4 hidden justify-center md:flex md:justify-start lg:hidden"
+            >
+              <a
+                href="https://wa.me/message/4F2ZBE3VOLNEC1"
+                aria-label="Chat with us on whatsapp"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-2 rounded-full bg-[#416772] px-7 py-3 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:bg-[#A6BCB5] hover:text-[#203959] hover:shadow-xl"
+              >
+                Book a Consultation
+                <span className="transition-transform duration-300 group-hover:translate-x-1">
+                  <ExternalLink />
+                </span>
+              </a>
+            </motion.div>
           </motion.div>
 
           {/* RIGHT Text panel  */}
@@ -158,7 +195,7 @@ export default function Founder() {
 
             <motion.div
               variants={fadeRight}
-              className="mt-2 flex flex-wrap justify-center gap-2 md:justify-start"
+              className="mt-2 flex flex-wrap justify-center gap-2 md:hidden md:justify-start lg:flex"
             >
               {[
                 "Business Formation",
@@ -178,7 +215,7 @@ export default function Founder() {
             {/* CTA */}
             <motion.div
               variants={fadeRight}
-              className="mt-4 flex justify-center md:justify-start"
+              className="mt-4 flex justify-center md:hidden md:justify-start lg:flex"
             >
               <a
                 href="https://wa.me/message/4F2ZBE3VOLNEC1"

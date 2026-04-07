@@ -10,6 +10,7 @@ export default function TermsOfService() {
       badge="Legal"
       title="Terms of Service"
       lastUpdated="05/01/2026"
+      filePath="/pdfs/TCBP-Terms-Of-Service.pdf"
     >
       {/* Intro */}
       <PolicyHighlight>

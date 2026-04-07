@@ -1,9 +1,17 @@
-export default function PolicyLayout({ badge, title, lastUpdated, children }) {
+import { Link } from "react-router-dom";
+import DownloadPolicyBtn from "./DownloadPolicyBtn";
+
+export default function PolicyLayout({
+  badge,
+  title,
+  lastUpdated,
+  filePath,
+  children,
+}) {
   return (
     <main className="min-h-screen w-full bg-[#F5F7F8]">
-      {/*  Hero Banner */}
-      <div className="relative overflow-hidden bg-[#203959] px-6 py-16 md:py-24">
-        {/* Decorative rings */}
+      {/* Hero Banner  */}
+      <section className="relative overflow-hidden bg-[#203959] px-6 py-16 md:py-24">
         <div
           aria-hidden
           className="pointer-events-none absolute -top-24 -right-24 h-80 w-80 rounded-full border-50 border-white/5"
@@ -28,17 +36,22 @@ export default function PolicyLayout({ badge, title, lastUpdated, children }) {
           <p className="mt-3 text-sm font-medium text-[#A6BCB5]">
             The Corporate BrandUp Ltd
           </p>
+
+          {/* Download button */}
+          <div className="mt-8 flex justify-center">
+            <DownloadPolicyBtn fileName={title} filePath={filePath} />
+          </div>
         </div>
-      </div>
+      </section>
 
       {/* Content Body */}
-      <div className="mx-auto max-w-3xl px-6 py-14 md:py-20">
+      <section className="mx-auto max-w-3xl px-6 py-14 md:py-20">
         <div className="space-y-10">{children}</div>
 
         {/* Back link */}
         <div className="mt-16 border-t border-[#203959]/15 pt-8 text-center">
-          <a
-            href="/"
+          <Link
+            to="/"
             className="inline-flex items-center gap-2 rounded-full bg-[#203959] px-6 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-80"
           >
             <svg
@@ -56,9 +69,9 @@ export default function PolicyLayout({ badge, title, lastUpdated, children }) {
               />
             </svg>
             Back to Home
-          </a>
+          </Link>
         </div>
-      </div>
+      </section>
     </main>
   );
 }
@@ -76,7 +89,7 @@ export function PolicySection({ number, title, children }) {
         )}
         <h2 className="text-lg font-bold text-[#203959] md:text-xl">{title}</h2>
       </div>
-      <div className="ml-0 space-y-3 pl-0 text-sm leading-relaxed text-[#203959]/70 md:ml-12 md:pl-0 md:text-base">
+      <div className="ml-0 space-y-3 text-sm leading-relaxed text-[#203959]/70 md:ml-12 md:text-base">
         {children}
       </div>
     </section>

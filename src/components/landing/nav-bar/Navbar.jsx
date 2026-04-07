@@ -105,7 +105,7 @@ export default function Navbar() {
         {/* CTA Button */}
         <a
           href="#contact"
-          className="ml-4 hidden rounded-xl bg-[#96ADA5] py-2 text-center font-semibold text-[#203959] transition-colors hover:bg-[#416772] hover:text-[#ABB7B3] md:block md:px-4 lg:px-5"
+          className="ml-4 hidden rounded-xl bg-[#A6BCB5] py-2 text-center font-semibold text-[#203959] transition-colors hover:bg-[#416772] hover:text-white md:block md:px-4 lg:px-5"
         >
           Contact Us
         </a>
